@@ -1,0 +1,35 @@
+<div class="container table-content">
+    <h5>Employee  Data</h5>
+    <div class="flex-data">
+        <table *ngIf="employeeData.length">
+            <thead>
+              <!-- <th>Emp Number</th> -->
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Status</th>
+                <th>Actions</th>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of employeeData;let i=index">
+                  <!-- <td>{{item.empNumber | uppercase}}</td> -->
+                    <td>{{item.empFirstName | uppercase}}</td>
+                    <td>{{item.empLastName | uppercase}}</td>
+                    <!-- uppercase pipe is used -->
+                    <td>{{item.empLastEmail}}</td>
+                    <td>{{item.phoneNumber}}</td>
+                    <td>{{item.status}}</td>
+                    <td>
+                        <input type="button" name="Edit" value="Edit" (click)="editStudent(item)" /> &nbsp;&nbsp;&nbsp;
+                        <input type="button" name="delete" value="Delete" (click)="deleteStudent(i)" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="employeeData.length===0" class="flex-data">
+        No data available
+    </div>
+</div>

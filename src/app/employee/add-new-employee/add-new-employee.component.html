@@ -1,0 +1,40 @@
+<div class="container table-content">
+    <h5>Employee Information</h5>
+    <div class="row">
+        <div class="col-3">
+            <div>First Name</div>
+            <div>
+                <input type="text" [(ngModel)]="empFirstName" id="empNumber" />
+            </div>
+        </div>
+        <div class="col-3">
+          <div>Last Name</div>
+          <div>
+              <input type="text" [(ngModel)]="empLastName" id="empNumber" />
+          </div>
+      </div>
+        <div class="col-3">
+            <div>Email</div>
+            <div>
+                <input type="text" [(ngModel)]="empLastEmail" id="empNumber" />
+            </div>
+        </div>
+        <div class="col-3">
+          <div>Phone Number</div>
+          <div>
+              <input type="number" [(ngModel)]="phoneNumber" id="empNumber" />
+          </div>
+      </div>
+      <div class="col-3">
+        <div>Status</div>
+        <div>
+            <input type="text" [(ngModel)]="status" id="empNumber" />
+        </div>
+    </div>
+        <div class="col-3">
+
+                <input type="button" class="btn-save" [disabled]="isAddnewDisabled()" name="Add Details" value="Add Details" (click)="addNewStudent()" />
+
+        </div>
+    </div>
+</div>

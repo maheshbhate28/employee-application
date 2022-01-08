@@ -1,0 +1,27 @@
+{
+    "studentsData": [
+        {
+
+            "phoneNumber": 9890098000,
+            "empFirstName": "Akshay",
+            "empLastName":"Deshmukh",
+            "empLastEmail": "akshay@gmail.com",
+            "status":"Active"
+
+        },{
+
+          "phoneNumber": 9890098000,
+          "empFirstName": "Mahesh",
+          "empLastName":"Bhate",
+          "empLastEmail": "mahesh@gmail.com",
+          "status":"Active"
+        },{
+
+          "phoneNumber": 9890098000,
+          "empFirstName": "Ajay",
+          "empLastName":"Choudhary",
+          "empLastEmail": "ajay@gmail.com",
+          "status":"Active"
+        }
+    ]
+}

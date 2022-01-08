@@ -1,0 +1,18 @@
+table {
+    width: 800px;
+}
+
+.table-content {
+    border: 1px solid #ccc;
+    padding: 30px 20px;
+}
+
+.flex-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+thead {
+    background: #ccc;
+}
